@@ -21,6 +21,7 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
@@ -119,7 +120,22 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         }
 
-       //var  bottam_navigation_view=findViewById<>(R.id.bottam_navigation_view)
+       var  bottam_navigation_view=findViewById<BottomNavigationView>(R.id.bottam_navigation_view)
+        bottam_navigation_view.setOnNavigationItemReselectedListener { item->
+
+            when(item.itemId){
+                R.id.action_hospital->nearByPlace("hospital")
+
+
+            }
+
+
+        }
+
+    }
+
+    private fun nearByPlace(s: String) {
+
 
     }
 
