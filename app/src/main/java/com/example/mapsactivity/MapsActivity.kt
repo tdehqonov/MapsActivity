@@ -41,6 +41,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     lateinit var locationCallback: LocationCallback
 
 
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -116,10 +119,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         }
 
-
-
-
-
+       //var  bottam_navigation_view=findViewById<>(R.id.bottam_navigation_view)
 
     }
 
